@@ -316,7 +316,6 @@ menu:
 				goto label_Patrat;
 			}
 			Forma_Geometrica* B = new Patrat(P); //upcast
-			cout << *B << '\n';
 			Forme.push_back(make_pair(B, "Patrat"));
 		}
 			break;
