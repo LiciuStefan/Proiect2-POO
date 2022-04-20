@@ -63,3 +63,32 @@ cout << "Introduceti: asbscisa punctului stanga jos(float), ordonata punctului s
 			Forme.push_back(make_pair(B, "Patrat"));
 ```
 Operatorii de afisare folosesc functii virtuale mostenite pentru afisare.
+```
+void  Patrat::afisare(ostream& stream)
+{
+	Forma_Geometrica::afisare(stream);
+	cout << ' ' << this->latura;
+}
+ostream& operator<<(ostream& stream, Patrat& P)
+{
+	P.afisare(stream);
+	return stream;
+}
+```
+Programul contine si un meniu interactiv in source.cpp pentru a ilustra conceptele aplicate. Acesta trateaza exceptiile pentru input invalid.
+Ex:
+---------------------------------------------------Meniu-----------------------------------------------
+0.Exit
+1.Vezi forme geometrice
+2.Adauga forma geometrica
+3.Sterge forma geometrica
+4.Calcul arie forma geometrica
+5.Calcul volum forma geometrica
+6.Calculeaza lungime laturi triunghi
+7.Centru de greutate triunghi
+Introduceti cifra corespunzatoare actiunii dorite:
+fqljfqopfj o qfopqjifp qj qfoqjfqpf
+Input invalid!
+Introduceti cifra corespunzatoare actiunii dorite:
+
+
