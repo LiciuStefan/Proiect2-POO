@@ -30,7 +30,6 @@ In cazul acestei clase, data punct_stanga_jos va reprezenta centrul cercului. Co
 
 Toti operatorii de citire suprascrisi verifica cazurile de exceptie, care apoi sunt tratate in main folosind try...catch.
 '''C++
-Ex clasa Patrat:
 istream& operator>>(istream& stream, Patrat& P)
 {
 	Forma_Geometrica* F = &P;
