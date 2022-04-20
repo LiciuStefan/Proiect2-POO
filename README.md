@@ -30,6 +30,7 @@ In cazul acestei clase, data punct_stanga_jos va reprezenta centrul cercului. Co
 
 Toti operatorii de citire suprascrisi verifica cazurile de exceptie, care apoi sunt tratate in main folosind try...catch.
 ```C++
+//Ex clasa Patrat
 istream& operator>>(istream& stream, Patrat& P)
 {
 	Forma_Geometrica* F = &P;
@@ -46,5 +47,19 @@ istream& operator>>(istream& stream, Patrat& P)
 
 	return stream;
 }
+//In main:
+cout << "Introduceti: asbscisa punctului stanga jos(float), ordonata punctului stanga jos(float), inaltimea(float) si lungimea laturii(float)\n";
+		label_Patrat:
+			try {
+				cin >> P;
+			}
+			catch (invalid_argument arg)
+			{
+				cout << arg.what() << '\n';
+				goto label_Patrat;
+			}
+			Forma_Geometrica* B = new Patrat(P); //upcast
+			cout << *B << '\n';
+			Forme.push_back(make_pair(B, "Patrat"));
 ```
 Operatorii de afisare folosesc functii virtuale mostenite pentru afisare.
