@@ -76,19 +76,200 @@ ostream& operator<<(ostream& stream, Patrat& P)
 }
 ```
 Programul contine si un meniu interactiv in source.cpp pentru a ilustra conceptele aplicate. Acesta trateaza exceptiile pentru input invalid.
-Ex:
----------------------------------------------------Meniu-----------------------------------------------
-0.Exit
-1.Vezi forme geometrice
-2.Adauga forma geometrica
-3.Sterge forma geometrica
-4.Calcul arie forma geometrica
-5.Calcul volum forma geometrica
-6.Calculeaza lungime laturi triunghi
-7.Centru de greutate triunghi
-Introduceti cifra corespunzatoare actiunii dorite:
-fqljfqopfj o qfopqjifp qj qfoqjfqpf
-Input invalid!
-Introduceti cifra corespunzatoare actiunii dorite:
+**Ex:**
+---------------------------------------------------Meniu-----------------------------------------------</br>
+0.Exit</br>
+1.Vezi forme geometrice</br>
+2.Adauga forma geometrica</br>
+3.Sterge forma geometrica</br>
+4.Calcul arie forma geometrica</br>
+5.Calcul volum forma geometrica</br>
+6.Calculeaza lungime laturi triunghi</br>
+7.Centru de greutate triunghi</br>
+Introduceti cifra corespunzatoare actiunii dorite:</br>
+fqljfqopfj o qfopqjifp qj qfoqjfqpf</br>
+Input invalid!</br>
+Introduceti cifra corespunzatoare actiunii dorite:</br>
 
+**Ex input pentru adaugare forma geometrica:**</br>
+1</br>
+Da</br>
+2</br>
+1<br>
+0.1 0.1 2.34 5.56</br>
 
+**Output:**</br>
+---------------------------------------------------Meniu-----------------------------------------------</br>
+0.Exit</br>
+1.Vezi forme geometrice</br>
+2.Adauga forma geometrica</br>
+3.Sterge forma geometrica</br>
+4.Calcul arie forma geometrica</br>
+5.Calcul volum forma geometrica</br>
+6.Calculeaza lungime laturi triunghi</br>
+7.Centru de greutate triunghi</br>
+Introduceti cifra corespunzatoare actiunii dorite:</br>
+1</br>
+Triunghi 0 1 10 2 2 3 1</br>
+Cerc 10 0 20 100</br>
+Doriti o alta actiune?</br>
+Da</br>
+0.Exit</br>
+1.Vezi forme geometrice</br>
+2.Adauga forma geometrica</br>
+3.Sterge forma geometrica</br>
+4.Calcul arie forma geometrica</br>
+5.Calcul volum forma geometrica</br>
+6.Calculeaza lungime laturi triunghi</br>
+7.Centru de greutate triunghi</br>
+Introduceti cifra corespunzatoare actiunii dorite:</br>
+2</br>
+Alegeti natura formei geometrice:</br>
+1. Patrat</br>
+2. Dreptunghi</br>
+3. Romb</br>
+4. Triunghi</br>
+5. Cerc</br>
+1</br>
+Introduceti: asbscisa punctului stanga jos(float), ordonata punctului stanga jos(float), inaltimea(float) si lungimea laturii(float)</br>
+0.1 0.1 2.34 5.56</br>
+Doriti o alta actiune?</br>
+da</br>
+0.Exit</br>
+1.Vezi forme geometrice</br>
+2.Adauga forma geometrica</br>
+3.Sterge forma geometrica</br>
+4.Calcul arie forma geometrica</br>
+5.Calcul volum forma geometrica</br>
+6.Calculeaza lungime laturi triunghi</br>
+7.Centru de greutate triunghi</br>
+Introduceti cifra corespunzatoare actiunii dorite:</br>
+1</br>
+Triunghi 0 1 10 2 2 3 1</br>
+Cerc 10 0 20 100</br>
+Patrat 0.1 0.1 2.34 5.56</br>
+Doriti o alta actiune?</br>
+**Ex stergere element:**</br>
+**Input:**</br>
+1</br>
+da</br>
+3</br>
+1</br>
+da</br>
+1</br>
+
+****Output:**
+Introduceti cifra corespunzatoare actiunii dorite:</br>
+1</br>
+Triunghi 0 1 10 2 2 3 1</br>
+Cerc 10 0 20 100</br>
+Patrat 0.1 0.1 2.34 5.56</br>
+Doriti o alta actiune?</br>
+Da</br>
+0.Exit</br>
+1.Vezi forme geometrice</br>
+2.Adauga forma geometrica</br>
+3.Sterge forma geometrica</br>
+4.Calcul arie forma geometrica</br>
+5.Calcul volum forma geometrica</br>
+6.Calculeaza lungime laturi triunghi</br>
+7.Centru de greutate triunghi</br>
+Introduceti cifra corespunzatoare actiunii dorite:</br>
+3</br>
+Triunghi 0 1 10 2 2 3 1</br>
+Cerc 10 0 20 100</br>
+Patrat 0.1 0.1 2.34 5.56</br>
+Introduceti pozitia corespunzatoare obiectului pe care doriti sa il stergeti:</br>
+1</br>
+Elementul a fost sters</br>
+Doriti o alta actiune?</br>
+da</br>
+0.Exit</br>
+1.Vezi forme geometrice</br>
+2.Adauga forma geometrica</br>
+3.Sterge forma geometrica</br>
+4.Calcul arie forma geometrica</br>
+5.Calcul volum forma geometrica</br>
+6.Calculeaza lungime laturi triunghi</br>
+7.Centru de greutate triunghi</br>
+Introduceti cifra corespunzatoare actiunii dorite:</br>
+1</br>
+Triunghi 0 1 10 2 2 3 1</br>
+Patrat 0.1 0.1 2.34 5.56</br>
+**Ex input calcul arie:**</br>
+4</br>
+1</br>
+
+**Output:**</br>
+0.Exit</br>
+1.Vezi forme geometrice</br>
+2.Adauga forma geometrica</br>
+3.Sterge forma geometrica</br>
+4.Calcul arie forma geometrica</br>
+5.Calcul volum forma geometrica</br>
+6.Calculeaza lungime laturi triunghi</br>
+7.Centru de greutate triunghi</br>
+Introduceti cifra corespunzatoare actiunii dorite:</br>
+4</br>
+Triunghi 0 1 10 2 2 3 1</br>
+Patrat 0.1 0.1 2.34 5.56</br>
+Introduceti pozitia corespunzatoare obiectului a carui arie se calculeaza:</br>
+1</br>
+30.9136</br>
+Doriti o alta actiune?</br>
+
+**Ex calcul volum:**</br>
+**input:**</br>
+5</br>
+1</br>
+
+**Output:**</br>
+Introduceti cifra corespunzatoare actiunii dorite:</br>
+5</br>
+Triunghi 0 1 10 2 2 3 1</br>
+Patrat 0.1 0.1 2.34 5.56</br>
+Introduceti pozitia corespunzatoare obiectului a carui volum se calculeaza:</br>
+1</br>
+72.3378</br>
+Doriti o alta actiune?</br>
+
+**Ex calcul lungimi laturi triunghi dat de la tastatura:**</br>
+**Input:**</br>
+6</br>
+2</br>
+0 0 2.314 5.231 7.241 10.41 -3.24</br>
+
+**Output:**</br>
+Introduceti cifra corespunzatoare actiunii dorite:</br>
+6</br>
+Alegeti una din optiuni:</br>
+1. Element deja existent in vector</br>
+2. Element nou</br>
+2</br>
+Introduceti: abscisa primului punct(float), ordonata primului punct(float), inaltimea(float), abscisa punctului 2(float), ordonata punctului 2(float), abscisa punctului 3(float), ordonata punctului 3(float)</br>
+0 0 2.314 5.231 7.241 10.41 -3.24</br>
+Lungimea laturii AB este:</br>
+8.93283</br>
+Lungimea laturii AC este:</br>
+10.9026</br>
+Lungimea laturii BC este:</br>
+11.6907</br>
+Doriti o alta actiune?</br>
+
+**Ex calcul coordonate centru de greutate triunghi:**</br>
+**Input:**</br>
+7</br>
+2</br>
+-1.1 3.21 4 4.66 -2.45 8.99 7.65</br>
+
+**Output:**</br>
+7</br>
+Alegeti una din optiuni:</br>
+1. Element deja existent in vector</br>
+2. Element nou</br>
+2</br>
+Introduceti: abscisa primului punct(float), ordonata primului punct(float), inaltimea(float), abscisa punctului 2(float), ordonata punctului 2(float), abscisa punctului 3(float), ordonata punctului 3(float)</br>
+-1.1 3.21 4 4.66 -2.45 8.99 7.65</br>
+Centrul de greutate al triunghiului are coordonatele:</br>
+4.18333 2.80333</br>
+Doriti o alta actiune?</br>
