@@ -29,7 +29,7 @@ Clasa mostenita din clasa Forma_Geometrica
 In cazul acestei clase, data punct_stanga_jos va reprezenta centrul cercului. Contine in plus ca date membre raza de tipul float si data statica pi.
 
 Toti operatorii de citire suprascrisi verifica cazurile de exceptie, care apoi sunt tratate in main folosind try...catch.
-'''C++
+```C++
 istream& operator>>(istream& stream, Patrat& P)
 {
 	Forma_Geometrica* F = &P;
@@ -46,5 +46,5 @@ istream& operator>>(istream& stream, Patrat& P)
 
 	return stream;
 }
-'''
+```
 Operatorii de afisare folosesc functii virtuale mostenite pentru afisare.
